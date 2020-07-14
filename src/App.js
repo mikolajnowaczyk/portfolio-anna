@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom'
+import MainPage from './containers/Main/Main'
+// import Offer from './containers/Offer/Offer'
+// import Contact from './containers/Contact/Contact'
+import Layout from './hoc/Layout/Layout'
+import asyncComponent from './hoc/asyncComponent/asyncComponent'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const asyncOffer = asyncComponent(() => {
+  return import('./containers/Offer/Offer');
+})
+
+const asyncPriceList = asyncComponent(() => {
+  return import('./containers/PriceList/PriceList');
+})
+
+const asyncContact = asyncComponent(() => {
+  return import('./containers/Contact/Contact');
+})
+
+class App extends Component {
+  render() {
+    let routes = (
+      <Switch>
+        <Route path="/kontakt" component={asyncContact} />
+        <Route path="/cennik" component={asyncPriceList} />
+        <Route path="/uslugi" component={asyncOffer} />
+        <Route path="/" component={MainPage} />
+        <Redirect to="/" />
+      </Switch>
+    );
+
+    return (
+      <div>
+        <Layout>
+          {routes}
+        </Layout>
+      </div>
+    );
+  };
+};
 
 export default App;

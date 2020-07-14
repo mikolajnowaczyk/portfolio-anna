@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
 
-class Offer extends Component {
+class Main extends Component {
   render() {
     return (
-      <h1>Oferta</h1>
+      <h1>O mnie</h1>
     )
   }
 }
 
-export default Offer
+export default Main

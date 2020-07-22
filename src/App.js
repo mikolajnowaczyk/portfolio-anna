@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import MainPage from './containers/Main/Main'
 // import Offer from './containers/Offer/Offer'
 // import Contact from './containers/Contact/Contact'
@@ -40,4 +40,4 @@ class App extends Component {
   };
 };
 
-export default App;
+export default withRouter(App);

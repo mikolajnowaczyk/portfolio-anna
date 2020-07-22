@@ -2,7 +2,7 @@
   margin: 10px 0;
   box-sizing: border-box;
   display: block;
-  width: 100%
+  width: 100%;
 }
 
 .NavigationItem a {
@@ -16,7 +16,7 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active{
-  color: #40A4C8;
+  color: #3300cc;
 }
 
 
@@ -39,8 +39,8 @@
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active{
-    background-color: #4bd356;
-    border-bottom: 4px solid #f1f52a;
-    color: #f1f52a;
+    background-color: #3b9ee2;
+    border-bottom: 4px solid #fbff19;
+    color: #fbff19;
   }
-}
+} 

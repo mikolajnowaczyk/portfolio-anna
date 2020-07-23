@@ -12,6 +12,11 @@
   font-size: 30px;
 } 
 
+.Wrapper{
+  background-color: rgba(25, 0, 255, 0.25);
+  height: 100%;
+}
+
 .OfferTile a {
   color: white;
   text-transform: uppercase;
@@ -26,7 +31,7 @@
 }
 
 .OfferTile:hover{
-  opacity: 0.7;
+  opacity: 0.75;
   color: white;
 }
 

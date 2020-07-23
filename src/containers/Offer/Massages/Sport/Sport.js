@@ -9,7 +9,7 @@ const Sport = (props) => {
       title={test_text}
       description={test_text}
       routine={test_text}
-      benefits={[{ test_text }, "Korzyść 2"]} />
+      benefits={[test_text, "Korzyść 2"]} />
   )
 }
 

@@ -10,23 +10,13 @@ const ManualTherapy = (props) => {
   //console.log(path, url)
   return (
     <div>
-      <h1 className={classes.title}>Masaże</h1>
-      <h2 className={classes.description}>Oferuję szeroką gamę masaży specjalistycznych, leczniczych oraz relaksacyjnych. Sprawdź moją ofertę.</h2>
+      <h1 className={classes.title}>Terapie</h1>
+      <h2 className={classes.description}>Oferuję szeroką gamę terapii. Sprawdź moją ofertę.</h2>
       <div className={classes.Massages}>
-        <OfferTile link={`${url}/leczniczy`} exact image={images.massage_woman}>Leczniczy</OfferTile>
-        <OfferTile link={`${url}/klasyczny`} image={images.massage}>Klasyczny</OfferTile>
-        <OfferTile link={`${url}/sportowy,`} exact image={images.back}>Sportowy</OfferTile>
-        <OfferTile link={`${url}/izometryczny,`} exact image={images.back_roll}>Izometryczny</OfferTile>
-        <OfferTile link={`${url}/drenaz-limfatyczny`} exact image={images.massage_oil}>Drenaż limfatyczny</OfferTile>
-
+        <OfferTile link={`${url}/Cyriax`} exact image={images.shoulder}>Cyriax</OfferTile>
+        <OfferTile link={`${url}/masaz-tkanek-glebokich`} image={images.test}>Masaż tkanek głebokich</OfferTile>
+        <OfferTile link={`${url}/miesniowo-powieziowa`} exact image={images.back}>Terapia mięśniowo-powięziowa</OfferTile>
       </div>
-      {/* <Switch>
-        <Route path={`${path}/klasyczny`} component={OfferView} />
-        <Route path={`${path}/sportowy`} component={OfferView} />
-        <Route path={`${path}/izometryczny`} component={OfferView} />
-        <Route path={`${path}/drenaz-limfatyczny`} component={OfferView} />
-        <Route path={`${path}/leczniczy`} component={OfferView} />
-      </Switch> */}
     </div>)
 }
 

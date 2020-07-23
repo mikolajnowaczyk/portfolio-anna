@@ -9,7 +9,7 @@ const Classic = (props) => {
       title={test_text}
       description={test_text}
       routine={test_text}
-      benefits={[{ test_text }, "Korzyść 2"]} />
+      benefits={["Korzyść 2"]} />
   )
 }
 

@@ -15,8 +15,8 @@ const Massages = (props) => {
       <div className={classes.Massages}>
         <OfferTile link={`${url}/leczniczy`} exact image={images.massage_woman}>Leczniczy</OfferTile>
         <OfferTile link={`${url}/klasyczny`} image={images.massage}>Klasyczny</OfferTile>
-        <OfferTile link={`${url}/sportowy,`} exact image={images.back}>Sportowy</OfferTile>
-        <OfferTile link={`${url}/izometryczny,`} exact image={images.back_roll}>Izometryczny</OfferTile>
+        <OfferTile link={`${url}/sportowy`} exact image={images.back}>Sportowy</OfferTile>
+        <OfferTile link={`${url}/izometryczny`} exact image={images.back_roll}>Izometryczny</OfferTile>
         <OfferTile link={`${url}/drenaz-limfatyczny`} exact image={images.massage_oil}>Drenaż limfatyczny</OfferTile>
       </div>
     </div>)

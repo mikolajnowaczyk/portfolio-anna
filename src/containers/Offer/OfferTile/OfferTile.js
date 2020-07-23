@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import classes from './OfferTile.css'
 import { NavLink } from 'react-router-dom'
-import TestImg from '../../../shared/images'
 import { withRouter, useLocation, useRouteMatch } from "react-router-dom"
 
 const offerTile = (props) => {
   // let location = useLocation();
-  console.log(props);
+  //console.log(props);
   return (
-    <div className={classes.OfferTile} style={{ backgroundImage: `url(${TestImg})` }}>
+    <div className={classes.OfferTile} style={{ backgroundImage: `url(${props.image})` }}>
       <NavLink
         to={props.link}
         exact={props.exact}
@@ -22,9 +21,9 @@ const offerTile = (props) => {
 class OfferTile extends Component {
   //let { path, url } = useRouteMatch();
   render() {
-    console.log(this.props);
+    //console.log(this.props);
     return (
-      <div className={classes.OfferTile} style={{ backgroundImage: `url(${TestImg})` }}>
+      <div className={classes.OfferTile} style={{ backgroundImage: `url(${this.props.image})` }}>
         <NavLink
           to={this.props.link}
           exact={this.props.exact}

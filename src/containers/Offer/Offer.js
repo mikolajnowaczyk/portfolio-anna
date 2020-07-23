@@ -1,25 +1,22 @@
 import React, { Component } from 'react'
 import OfferTile from './OfferTile/OfferTile'
 import classes from './Offer.css'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Route, Switch, useRouteMatch } from 'react-router-dom'
+import * as images from '../../shared/images'
 
-class Offer extends Component {
-  render() {
-    console.log("[Offer]: ", this.props)
-    return (
-      <div>
-        <h1 className={classes.head}>Moja oferta</h1>
-        <div className={classes.Offer}>
-          <OfferTile link="/masaze" >Masaże</OfferTile>
-          <OfferTile link="/terapia-manualna" exact>Terapia manualna</OfferTile>
-          <OfferTile link="/kinesiology-taping" exact>Kinesiology taping</OfferTile>
-          <OfferTile link="/kinezyterapia" exact>Kinezyterapia</OfferTile>
-          <OfferTile link="/wizyta-domowa" exact>Wizyta domowa</OfferTile>
-        </div>
+const Offer = (props) => {
+  let { path, url } = useRouteMatch();
+  return (
+    <div>
+      <h1 className={classes.head}>Moja oferta</h1>
+      <div className={classes.Offer}>
+        <OfferTile link={`${url}/masaze`} image={images.massage}>Masaże</OfferTile>
+        <OfferTile link={`${url}/terapia-manualna`} exact image={images.back}>Terapia manualna</OfferTile>
+        <OfferTile link={`${url}/kinesiology-taping`} exact image={images.back_roll}>Kinesiology taping</OfferTile>
+        <OfferTile link={`${url}/kinezyterapia`} exact image={images.massage_oil}>Kinezyterapia</OfferTile>
+        <OfferTile link={`${url}/wizyta-domowa`} exact image={images.massage_woman}>Wizyta domowa</OfferTile>
       </div>
-    )
-
-  }
+    </div>)
 }
 
 export default withRouter(Offer)

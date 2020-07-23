@@ -1,0 +1,15 @@
+.Massages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-weight: 400;
+}

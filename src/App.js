@@ -69,9 +69,9 @@ class App extends Component {
         <Route path="/uslugi/masaze/leczniczy" component={() => <LazyMassageHealing />} />
         <Route path="/uslugi/masaze/relaksacyjny" component={() => <LazyMassageRelax />} />
         <Route path="/uslugi/masaze" component={() => <LazyMassages />} />
-        <Route path="/uslugi/terapia-manualna/miesniowo-powiezowa" component={() => <LazyTherapyMuscle />} />
+        <Route path="/uslugi/terapia-manualna/terapia-miesniowo-powiezowa" component={() => <LazyTherapyMuscle />} />
         <Route path="/uslugi/terapia-manualna/Cyriax" component={() => <LazyTherapyCyriax />} />
-        <Route path="/uslugi/terapia-manualna/tkanki-glebokie" component={() => <LazyTherapyDeepTissue />} />
+        <Route path="/uslugi/terapia-manualna/masaz-tkankek-glebokich" component={() => <LazyTherapyDeepTissue />} />
         <Route path="/uslugi/terapia-manualna" component={() => <LazyManualTherapy />} />
         <Route path="/uslugi/kinesiology-taping" component={() => <LazyKinesiologyTaping />} />
         <Route path="/uslugi/kinezyterapia" component={() => <LazyKinesioTherapy />} />

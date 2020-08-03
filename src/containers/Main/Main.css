@@ -1,0 +1,30 @@
+
+.Wrapper{
+  border: 2px yellow solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.HeroImage{
+  display:block;
+  border: red 2px solid;
+  height: 330px;
+  width: 550px;
+  margin: 15px;
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  background-size: cover;
+  /* font-size: 30px; */
+}
+
+.AboutMe{
+  border: 2px orange solid;
+  width: 40%;
+  text-align: justify;
+}
+
+.AboutMe h1{
+  text-align: center;
+}

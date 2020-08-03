@@ -5,6 +5,7 @@ import Auxi from "../../hoc/Auxilary/Auxilary";
 import classes from "./Layout.css";
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar'
 import SideDrawer from '../../components/Navigation/Sidedrawer/Sidedrawer'
+import Footer from '../../components/Navigation/Footer/Footer'
 
 class Layout extends Component {
   state = {
@@ -32,6 +33,7 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler} />
         <main className={classes.Content}>{this.props.children}</main>
+        <Footer />
       </Auxi>)
   }
 }

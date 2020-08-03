@@ -3,7 +3,7 @@ import classes from './ContactTile.css'
 import { FaEnvelope, FaPhoneAlt, FaRegClock } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'
 
-const iconElement = (iconType) => {
+export const iconElement = (iconType) => {
   switch (iconType) {
     case "email":
       return <FaEnvelope />;
@@ -20,14 +20,15 @@ const iconElement = (iconType) => {
 }
 
 const contactTile = (props) => {
-  let icon = props.iconType;
-  return (<div className={classes.ContatctTile}>
-    <h3>{props.title}</h3>
-    <div className={classes.Content}>
-      {iconElement(props.iconType)}
-      <p className={classes.content}>{props.content}</p>
+  return (
+    <div className={classes.ContatctTile}>
+      <div className={classes.ContactTileTitle}>{props.title}</div>
+      <div className={classes.Content}>
+        {iconElement(props.iconType)}
+        <p className={classes.content}>{props.content}</p>
+      </div>
     </div>
-  </div>)
+  )
 }
 
 export default contactTile;

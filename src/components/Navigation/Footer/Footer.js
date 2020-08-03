@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { FaEnvelope, FaPhoneAlt, FaPlus, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'
 
-const footer = (props) => (
+const footer = () => (
   <footer className={classes.Footer}>
     <div className={classes.FooterElementWrapper}>
       <div className={classes.ContatctTile}>

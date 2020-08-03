@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import OfferTile from './OfferTile/OfferTile'
 import classes from './Offer.css'
-import { withRouter, Route, Switch, useRouteMatch } from 'react-router-dom'
+import { withRouter, useRouteMatch } from 'react-router-dom'
 import * as images from '../../shared/images'
 
 const Offer = (props) => {
-  let { path, url } = useRouteMatch();
+  let { url } = useRouteMatch();
   return (
     <div>
       <h1 className={classes.head}>Moja oferta</h1>

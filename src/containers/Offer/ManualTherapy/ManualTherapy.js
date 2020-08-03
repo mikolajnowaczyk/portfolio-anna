@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import OfferTile from '../OfferTile/OfferTile'
 import classes from './ManualTherapy.css'
-import { withRouter, Route, Switch, useRouteMatch } from 'react-router-dom'
+import { withRouter, useRouteMatch } from 'react-router-dom'
 import * as images from '../../../shared/images'
 // import OfferView from './OfferView/OfferView'
 
 const ManualTherapy = (props) => {
-  let { path, url } = useRouteMatch();
+  let { url } = useRouteMatch();
   //console.log(path, url)
   return (
     <div>

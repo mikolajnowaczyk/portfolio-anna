@@ -72,16 +72,17 @@ class ContactData extends Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    const formData = {};
-    for (let formElementId in this.state.form) {
-      formData[formElementId] = this.state.form[formElementId].value;
-    }
-    const order = {
-      ingredients: this.props.ings,
-      price: this.props.price,
-      orderData: formData,
-      userId: this.props.userId
-    }
+    //[TODO] Send email
+    // const formData = {};
+    // for (let formElementId in this.state.form) {
+    //   formData[formElementId] = this.state.form[formElementId].value;
+    // }
+    // const order = {
+    //   ingredients: this.props.ings,
+    //   price: this.props.price,
+    //   orderData: formData,
+    //   userId: this.props.userId
+    // }
   }
 
   inputChangedHandler = (event, inputIdentyfier) => {

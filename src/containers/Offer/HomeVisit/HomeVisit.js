@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import OfferView from '../OfferView/OfferView'
-import classes from './HomeVisit.css'
+// import classes from './HomeVisit.css'
 
 const HomeVisit = (props) => {
   return (

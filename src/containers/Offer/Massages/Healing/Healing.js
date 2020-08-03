@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import OfferView from '../../OfferView/OfferView'
 // import classes from './Healing.css'
 

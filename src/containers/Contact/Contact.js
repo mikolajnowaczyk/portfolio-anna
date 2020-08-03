@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Auxi from '../../hoc/Auxilary/Auxilary'
+// import Auxi from '../../hoc/Auxilary/Auxilary'
 import classes from './Contact.css'
 import ContactTiles from './ContactTiles/ContactTiles'
 import ContactForm from './ContactForm/ContactForm'

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import classes from './OfferTile.css'
 import { NavLink } from 'react-router-dom'
-import { withRouter, useLocation, useRouteMatch } from "react-router-dom"
+import { withRouter } from "react-router-dom"
 
 const offerTile = (props) => {
   // let location = useLocation();

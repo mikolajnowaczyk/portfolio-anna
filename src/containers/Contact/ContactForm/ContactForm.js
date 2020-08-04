@@ -73,16 +73,7 @@ class ContactData extends Component {
   submitHandler = (event) => {
     event.preventDefault();
     //[TODO] Send email
-    // const formData = {};
-    // for (let formElementId in this.state.form) {
-    //   formData[formElementId] = this.state.form[formElementId].value;
-    // }
-    // const order = {
-    //   ingredients: this.props.ings,
-    //   price: this.props.price,
-    //   orderData: formData,
-    //   userId: this.props.userId
-    // }
+
   }
 
   inputChangedHandler = (event, inputIdentyfier) => {
@@ -133,12 +124,12 @@ class ContactData extends Component {
     }
     return (
       <div>
-        <strong>Masz pytania?</strong>
-        <h3>Zadzwoń lub wypełnij formularz!</h3>
+        <h2 style={{ textAlign: "center" }}>Masz pytania?</h2>
+        <h3 style={{ textAlign: "center" }}>Zadzwoń lub wypełnij formularz!</h3>
         <div className={classes.ContactData}>
           {form}
         </div>
-      </div>
+      </div >
     );
   }
 }

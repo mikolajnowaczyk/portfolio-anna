@@ -4,7 +4,7 @@ import classes from './ContactTiles.css'
 
 const contactTiles = (props) => {
   return (
-    <div className={classes.contactTiles}>
+    <div className={classes.ContactTiles}>
       <ContactTile title="ADRES" content="ul. Anny 1, 85-347 Bydgoszcz" iconType="location"></ContactTile>
       <ContactTile title="TELEFON" content="123-456-789" iconType="phone"></ContactTile>
       <ContactTile title="EMAIL" content="ania.fizjo@gmail.com" iconType="email"></ContactTile>

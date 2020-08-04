@@ -8,6 +8,9 @@ const input = (props) => {
   if (props.invalid && props.shouldValidate && props.touched) {
     inputClasses.push(classes.Invalid);
   }
+  if (props.elementType === "textarea") {
+    inputClasses.push(classes.TextArea);
+  }
   switch (props.elementType) {
     case ("input"):
       inputElement = <input

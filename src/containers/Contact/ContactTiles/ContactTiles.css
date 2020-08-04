@@ -1,3 +1,12 @@
 .ContactTiles{
   display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  align-items: center;
+}
+
+@media(min-width: 800px){
+  .ContactTiles{
+  align-items: flex-start;
+  }
 }

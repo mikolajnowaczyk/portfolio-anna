@@ -1,7 +1,5 @@
 import React from 'react'
-
 import classes from './Footer.module.css'
-// import { NavLink } from 'react-router-dom'
 import Link from 'next/link'
 import { FaEnvelope, FaPhoneAlt, FaPlus, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'

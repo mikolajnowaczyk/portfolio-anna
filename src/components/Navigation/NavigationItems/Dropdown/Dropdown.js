@@ -2,17 +2,16 @@ import React from 'react'
 import classes from './Dropdown.module.css'
 import { FaAngleDown, FaAngleUp } from "react-icons/fa"
 import Link from 'next/link'
-import { NavLink } from 'react-router-dom'
 
 const Dropdown = (props) => {
 
-  const dd_List = [];
-  const dd_Header = [];
-  const NavLink = [];
-  props.nested ? dd_List.push(classes.dd_List__Nested) : dd_List.push(classes.dd_List);
+  const dd_List = [classes.dd_List];
+  const dd_Header = [classes.dd__Header];
+  const NavLink = [classes.NavLink];
+  // props.nested ? dd_List.push(classes.dd_List__Nested) : dd_List.push(classes.dd_List);
   props.open ? dd_List.push(classes.Show) : dd_List.push(classes.Hide);
-  props.nested ? dd_Header.push(classes.dd__Header__Nested) : dd_Header.push(classes.dd__Header);
-  props.nested ? NavLink.push(classes.NavLink__Nested) : NavLink.push(classes.NavLink);
+  // props.nested ? dd_Header.push(classes.dd__Header__Nested) : dd_Header.push(classes.dd__Header);
+  // props.nested ? NavLink.push(classes.NavLink__Nested) : NavLink.push(classes.NavLink);
 
   const dd_List_Items = props.list.map(
     listItem => {

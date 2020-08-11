@@ -25,10 +25,9 @@
 @media(min-width: 650px){
   .Navbar{
     display: flex;
-    /* margin: auto 0; */
   }
 
-  .NavLink{
+  /* .NavLink{
     background: greenyellow;
     padding: 10px 20px;
     cursor: pointer;
@@ -36,6 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
 

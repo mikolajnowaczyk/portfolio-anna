@@ -72,9 +72,12 @@
     "start": "next",
     "dev": "next",
     "build": "node scripts/build.js",
+    "buildNext": "next build && next export",
+    "export": "next export",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "deployNext": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -14,22 +14,22 @@ class PriceList extends Component {
           </thead>
           <tbody className={classes.Tbody}>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Terapia Manualna</td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Terapia Manualna</td><td className={classes.Td}>100-120 zł</td>
             </tr>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Terapia mięśniowo-powięziowa</td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Terapia mięśniowo-powięziowa</td><td className={classes.Td}>100-120 zł</td>
             </tr>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Terapia indywidualna (ćwiczenia) </td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Terapia indywidualna (ćwiczenia) </td><td className={classes.Td}>100-120 zł</td>
             </tr>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Trening funkcjonalny </td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Trening funkcjonalny </td><td className={classes.Td}>100-120 zł</td>
             </tr>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Kinesiotaping </td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Kinesiotaping </td><td className={classes.Td}>100-120 zł</td>
             </tr>
             <tr className={classes.Tr}>
-              <td colspan="3" className={classes.Td}>Wizyta domowa </td><td className={classes.Td}>100-120 zł</td>
+              <td colSpan="3" className={classes.Td}>Wizyta domowa </td><td className={classes.Td}>100-120 zł</td>
             </tr>
           </tbody >
         </table>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import heroImage from '../../assets/test.jpg'
-import classes from './Main.css'
+// import heroImage from '../../assets/test.jpg'
+import classes from './Main.module.css'
 
 class Main extends Component {
   render() {
+    // let heroImage = require("/images/test.jpg");
     return (
       <div className={classes.Wrapper}>
-        <div className={classes.HeroImage} style={{ backgroundImage: `url(${heroImage})` }} />
+        <div className={classes.HeroImage} style={{ backgroundImage: `url('/images/test.jpg')` }} />
         <div className={classes.AboutMe} >
           <h1>
             „Fizjoterapia Anna Karpińska” – Terapia manualna i rehabilitacja

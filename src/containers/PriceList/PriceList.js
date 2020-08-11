@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import classes from './PriceList.css'
+import classes from './PriceList.module.css'
 
 class PriceList extends Component {
   render() {
@@ -7,31 +7,31 @@ class PriceList extends Component {
       <div>
         <p className={classes.PriceListHeader}>Cennik usług</p>
         <table className={classes.Table}>
-          <thead>
-            <tr className={classes.TableHead}>
-              <th colspan="3">ZABIEGI</th><th>CENA</th>
+          <thead className={classes.Thead}>
+            <tr className={classes.Tr}>
+              <th className={classes.Th} colSpan="3">ZABIEGI</th><th className={classes.Th}>CENA</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td colspan="3">Terapia Manualna</td><td>100-120 zł</td>
+          <tbody className={classes.Tbody}>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Terapia Manualna</td><td className={classes.Td}>100-120 zł</td>
             </tr>
-            <tr>
-              <td colspan="3">Terapia mięśniowo-powięziowa</td><td>100-120 zł</td>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Terapia mięśniowo-powięziowa</td><td className={classes.Td}>100-120 zł</td>
             </tr>
-            <tr>
-              <td colspan="3">Terapia indywidualna (ćwiczenia) </td><td>100-120 zł</td>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Terapia indywidualna (ćwiczenia) </td><td className={classes.Td}>100-120 zł</td>
             </tr>
-            <tr>
-              <td colspan="3">Trening funkcjonalny </td><td>100-120 zł</td>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Trening funkcjonalny </td><td className={classes.Td}>100-120 zł</td>
             </tr>
-            <tr>
-              <td colspan="3">Kinesiotaping </td><td>100-120 zł</td>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Kinesiotaping </td><td className={classes.Td}>100-120 zł</td>
             </tr>
-            <tr>
-              <td colspan="3">Wizyta domowa </td><td>100-120 zł</td>
+            <tr className={classes.Tr}>
+              <td colspan="3" className={classes.Td}>Wizyta domowa </td><td className={classes.Td}>100-120 zł</td>
             </tr>
-          </tbody>
+          </tbody >
         </table>
       </div>
     )

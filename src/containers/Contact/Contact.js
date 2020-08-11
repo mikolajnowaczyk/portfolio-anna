@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Auxi from '../../hoc/Auxilary/Auxilary'
-import classes from './Contact.css'
+import classes from './Contact.module.css'
 import ContactTiles from './ContactTiles/ContactTiles'
 import ContactForm from './ContactForm/ContactForm'
 

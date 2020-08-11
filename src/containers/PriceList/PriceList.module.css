@@ -5,24 +5,24 @@
   border-collapse: collapse;
 }
 
-th{
+.Th{
   color: white;
   padding: 1rem;
 }
 
-td{
+.Td{
   /* border: red 1px solid; */
   text-align: center;
   padding: 1rem;
   border-bottom: 1px black solid;
 }
 
-thead{
+.Thead{
   background-color: #098013;
   font-size: 1.5rem;
 }
 
-tbody tr:hover{
+.Tbody .Tr:hover{
   background-color: #4bd356;
 }
 

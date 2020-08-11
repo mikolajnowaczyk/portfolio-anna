@@ -1,7 +1,8 @@
 import React from 'react'
 
-import classes from './Footer.css'
-import { NavLink } from 'react-router-dom'
+import classes from './Footer.module.css'
+// import { NavLink } from 'react-router-dom'
+import Link from 'next/link'
 import { FaEnvelope, FaPhoneAlt, FaPlus, FaArrowCircleRight } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'
 
@@ -23,38 +24,52 @@ const footer = () => (
           <FaEnvelope /><p className={classes.Footer__Content__Text}>ania.fizjo@gmail.com</p>
         </div>
       </div>
+
       <div className={classes.ContatctTile}>
         <h3>Nawigacja</h3>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaPlus />
-          <NavLink exact to="/" className={classes.Footer__Content__Link}> Strona główna </NavLink>
+          <Link href="/">
+            <a>Strona główna</a>
+          </Link>
         </div>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaPlus />
-          <NavLink exact to="/uslugi" className={classes.Footer__Content__Link}> Usługi </NavLink>
+          <Link href="/uslugi">
+            <a>Usługi</a>
+          </Link>
         </div>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaPlus />
-          <NavLink exact to="/cennik" className={classes.Footer__Content__Link}> Cennik </NavLink>
+          <Link href="/cennik">
+            <a>Cennik</a>
+          </Link>
         </div>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaPlus />
-          <NavLink exact to="/kontakt" className={classes.Footer__Content__Link}> Kontakt </NavLink>
+          <Link href="/kontakt">
+            <a>Kontakt</a>
+          </Link>
         </div>
       </div>
+
       <div className={classes.ContatctTile}>
         <h3>Polecane usługi</h3>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaArrowCircleRight />
-          <NavLink exact to="/kinesiology-taping" className={classes.Footer__Content__Link}> Kinesiology Taping </NavLink>
+          <Link href="/kinesiology-taping">
+            <a>Kinesiology Taping</a>
+          </Link>
         </div>
-        <div className={classes.Footer__Content}>
+        <div className={classes.Footer__Content__Link}>
           <FaArrowCircleRight />
-          <NavLink exact to="/kinezyterapia" className={classes.Footer__Content__Link}> Kinezyterapia </NavLink>
+          <Link href="/kinezyterapia">
+            <a>Kinezyterapia</a>
+          </Link>
         </div>
       </div>
     </div>
-    <section className={classes.FooterBottom}>Projekt i wykonanie MN © 2020</section>
+    <div className={classes.FooterBottom}>Projekt i wykonanie MN © 2020</div>
   </footer>
 )
 

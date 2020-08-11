@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../../../components/UI/Button/Button'
-import classes from "./ContactForm.css";
+import classes from "./ContactForm.module.css";
 import Spinner from '../../../components/UI/Spinner/Spinner'
 import Input from "../../../components/UI/Input/Input"
 import { updateObject, checkValidity } from '../../../shared/utility'

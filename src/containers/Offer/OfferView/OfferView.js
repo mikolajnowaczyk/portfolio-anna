@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './OfferView.css'
+import classes from './OfferView.module.css'
 import Auxi from '../../../hoc/Auxilary/Auxilary'
 
 const createBenefitsList = (input) => {

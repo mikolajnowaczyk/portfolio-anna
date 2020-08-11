@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './Backdrop.css'
+import classes from './Backdrop.module.css'
 import PropTypes from 'prop-types'
 
 const backdrop = (props) => (

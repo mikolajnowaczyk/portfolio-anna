@@ -1,15 +1,14 @@
 import React from 'react'
 import OfferView from '../../OfferView/OfferView'
-// import classes from './Healing.css'
 const test_text = "Classic";
 
-const Classic = (props) => {
+const Classic = () => {
   return (
     <OfferView
-      title={test_text}
-      description={test_text}
-      routine={test_text}
-      benefits={["Korzyść 2"]} />
+      title="Masaż klasyczny"
+      description="Opis masażu leczniczego"
+      routine="Przebieg masażu"
+      benefits={["Korzysc 1", "Zdrowie"]} />
   )
 }
 

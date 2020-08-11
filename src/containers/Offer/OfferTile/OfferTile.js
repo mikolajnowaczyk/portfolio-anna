@@ -1,42 +1,18 @@
 import React from 'react'
-import classes from './OfferTile.css'
-import { NavLink } from 'react-router-dom'
-import { withRouter } from "react-router-dom"
+import classes from './OfferTile.module.css'
+import Link from "next/link"
 
 const offerTile = (props) => {
-  // let location = useLocation();
-  //console.log(props);
+
   return (
     <div className={classes.OfferTile} style={{ backgroundImage: `url(${props.image})` }}>
       <div className={classes.Wrapper}>
-        <NavLink
-          to={props.link}
-          exact={props.exact}
-          activeClassName={classes.active}>
-          {props.children}
-        </NavLink>
+        <Link href={props.link}>
+          <a>{props.children}</a>
+        </Link>
       </div>
     </div>
   );
 };
 
-// class OfferTile extends Component {
-//   //let { path, url } = useRouteMatch();
-//   render() {
-//     //console.log(this.props);
-//     return (
-//       <div className={classes.OfferTile} style={{ backgroundImage: `url(${this.props.image})` }}>
-//         <div className={classes.wrapper}>
-//           <NavLink
-//             to={this.props.link}
-//             exact={this.props.exact}
-//             activeClassName={classes.active}>
-//             {this.props.children}
-//           </NavLink>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
-export default withRouter(offerTile);
+export default offerTile;

@@ -1,0 +1,54 @@
+.dd__Header{
+  background-color: wheat;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.dd_List{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Show{
+  display: block;
+}
+
+.Hide{
+  display: none;
+}
+
+.NavLink{
+  background: khaki;
+  padding: 10px 0 10px 20px;
+  cursor: pointer;
+}
+
+.Link:link{
+  text-decoration: none;
+}
+
+@media(min-width: 650px){
+  
+  .dd_List{
+    position: absolute;
+    top: 100%;
+  }
+
+  .NavLink{
+    padding: 10px;
+  }
+
+  .dd__Wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dd__Header{
+    padding: 10px 20px;
+  }
+}

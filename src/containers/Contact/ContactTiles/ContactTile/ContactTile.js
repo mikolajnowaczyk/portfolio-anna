@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './ContactTile.css'
+import classes from './ContactTile.module.css'
 import { FaEnvelope, FaPhoneAlt, FaRegClock } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md'
 import Auxi from '../../../../hoc/Auxilary/Auxilary'

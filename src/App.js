@@ -59,6 +59,14 @@ const MainPage = React.lazy(() => import('./containers/Main/Main'))
 const LazyMainPage = (props) => <LazyLoad component={MainPage} {...props} />
 
 class App extends Component {
+  componentDidUpdate(prevProps) {
+    if (
+      this.props.location.pathname !== prevProps.location.pathname
+    ) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   render() {
     let routes = (
       <Switch>
@@ -94,4 +102,5 @@ class App extends Component {
   };
 };
 
-export default withRouter(App);
+// export default withRouter(App);
+export default App;

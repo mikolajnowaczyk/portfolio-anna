@@ -1,0 +1,41 @@
+.Navbar{
+  height: 100%;
+}
+
+.NavLink{
+  background: greenyellow;
+  padding: 10px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavLink:hover{
+  background: red;
+  /* cursor: pointer; */
+  /* text-decoration: none; */
+}
+
+.Link:link{
+  text-decoration: none;
+}
+
+@media(min-width: 650px){
+  .Navbar{
+    display: flex;
+    /* margin: auto 0; */
+  }
+
+  .NavLink{
+    background: greenyellow;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

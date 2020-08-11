@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactTile from './ContactTile/ContactTile'
-import classes from './ContactTiles.css'
+import classes from './ContactTiles.module.css'
 
 const contactTiles = (props) => {
   return (

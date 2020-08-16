@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "@zeit/next-css": "^1.0.1",
     "babel-eslint": "10.1.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.1.0",
@@ -77,8 +78,10 @@
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "gh": "gh-pages -d out",
     "deployNext": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git push origin --delete gh-pages && git subtree push --prefix out origin gh-pages",
-    "deployNew": "next build && next export && gh-pages -d out -t true"
+    "deployNew": "next build && next export && gh-pages -d out -t true",
+    "deploy2": "next build && next export && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"

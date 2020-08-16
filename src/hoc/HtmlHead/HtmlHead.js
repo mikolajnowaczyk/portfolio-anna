@@ -8,6 +8,7 @@ const HtmlHead = (props) => {
       <Head>
         <title>{props.title}</title>
         <meta property="og:title" content="My page title" key="title" />
+        <link href="/static/styles.css" rel="stylesheet" />
       </Head>
     </Auxi>
   )

@@ -365,22 +365,22 @@ module.exports = function (webpackEnv) {
             //   ],
             // },
 
-            {
-              test: /\.(png|jpe?g|gif)$/i,
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].[ext]',
-              },
-            },
-
             // {
-            //   test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-            //   loader: require.resolve('url-loader'),
+            //   test: /\.(png|jpe?g|gif)$/i,
+            //   loader: 'file-loader',
             //   options: {
-            //     limit: imageInlineSizeLimit,
-            //     name: 'static/media/[name].[hash:8].[ext]',
+            //     name: '[path][name].[ext]',
             //   },
             // },
+
+            {
+              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+              loader: require.resolve('url-loader'),
+              options: {
+                limit: imageInlineSizeLimit,
+                name: 'static/media/[name].[hash:8].[ext]',
+              },
+            },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {

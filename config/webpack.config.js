@@ -356,14 +356,31 @@ module.exports = function (webpackEnv) {
             // "url" loader works like "file" loader except that it embeds assets
             // smaller than specified limit in bytes as data URLs to avoid requests.
             // A missing `test` is equivalent to a match.
+            // {
+            //   test: /\.(png|jpe?g|gif)$/i,
+            //   use: [
+            //     {
+            //       loader: 'file-loader',
+            //     },
+            //   ],
+            // },
+
             {
-              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-              loader: require.resolve('url-loader'),
+              test: /\.(png|jpe?g|gif)$/i,
+              loader: 'file-loader',
               options: {
-                limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: '[path][name].[ext]',
               },
             },
+
+            // {
+            //   test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            //   loader: require.resolve('url-loader'),
+            //   options: {
+            //     limit: imageInlineSizeLimit,
+            //     name: 'static/media/[name].[hash:8].[ext]',
+            //   },
+            // },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {

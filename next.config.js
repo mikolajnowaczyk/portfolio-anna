@@ -70,20 +70,20 @@ module.exports = withPlugins([
   }
 ])
 
-withCSS({
-  cssModules: true,
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: "[local]___[hash:base64:5]",
-  },
-  assetPrefix: assetPrefix,
-  basePath: assetPrefix,
-  webpack: config => {
-    config.plugins.push(
-      new webpack.DefinePlugin({
-        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
-      }),
-    )
-    return config
-  },
-})
+// withCSS({
+//   cssModules: true,
+//   cssLoaderOptions: {
+//     importLoaders: 1,
+//     localIdentName: "[local]___[hash:base64:5]",
+//   },
+//   assetPrefix: assetPrefix,
+//   basePath: assetPrefix,
+//   webpack: config => {
+//     config.plugins.push(
+//       new webpack.DefinePlugin({
+//         'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
+//       }),
+//     )
+//     return config
+//   },
+// })

@@ -8,10 +8,6 @@ import HtmlHead from '../hoc/HtmlHead/HtmlHead'
 const Index = () => (
   <StrictMode>
     <Layout>
-      {/* <Head>
-        <title>My index page</title>
-        <link href="./" rel="stylesheet" />
-      </Head> */}
       <HtmlHead title="Strona główna" />
       <Main />
     </Layout>

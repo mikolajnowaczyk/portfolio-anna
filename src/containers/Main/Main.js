@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
-// import heroImage from '../../assets/test.jpg'
+import * as images from '../../shared/images'
+
+// import test from '../../assets/images/test.jpg'
 import classes from './Main.module.css'
+// import bck from '../../assets/images/logo.png'
 
 class Main extends Component {
   render() {
     // let heroImage = require("/images/test.jpg");
     return (
       <div className={classes.Wrapper}>
-        <div className={classes.HeroImage} style={{ backgroundImage: `url('/images/test.jpg')` }} />
+        {/* <div className={classes.HeroImage} style={{ backgroundImage: `url(require("/../assets/images/logo.png"))` }} /> */}
+        {/* <div className={classes.HeroImage} style={{ backgroundImage: `url(${bck})` }} /> */}
+        {/* <div className={classes.HeroImage} style={{ backgroundImage: `url(${require(images.hand)})` }} /> */}
+        {/* <div className={classes.HeroImage} style={{ backgroundImage: 'url(' + require('./../../assets/images/test.jpg') + ')' }} /> */}
+        <img src={"./images/hand.jpg"} alt="logo" height="100%" width="100%" />
         <div className={classes.AboutMe} >
           <h1>
             „Fizjoterapia Anna Karpińska” – Terapia manualna i rehabilitacja

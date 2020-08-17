@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.module.css';
-import Layout from '../../../../hoc/Layout/Layout'
-import Isometric from '../../../../containers/Offer/Massages/Isometric/Isometric'
+import Layout from '../../../hoc/Layout/Layout'
+import Isometric from '../../../containers/Offer/Massages/Isometric/Isometric'
 
 const Index = () => (
   <Layout>

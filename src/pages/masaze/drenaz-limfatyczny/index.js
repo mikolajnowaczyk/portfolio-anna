@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../../hoc/Layout/Layout'
-import ManualTherapy from '../../../containers/Offer/ManualTherapy/ManualTherapy'
+import LymphaticDraining from '../../../containers/Offer/Massages/LymphaticDraining/LymphaticDraining'
 
 const Index = () => (
   <Layout>
-    <ManualTherapy />
+    <LymphaticDraining />
   </Layout>
 )
 

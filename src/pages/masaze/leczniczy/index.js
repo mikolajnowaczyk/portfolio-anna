@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../../hoc/Layout/Layout'
-import KinesioTherapy from '../../../containers/Offer/KinesioTherapy/KinesioTherapy'
+import Healing from '../../../containers/Offer/Massages/Healing/Healing'
 
 const Index = () => (
   <Layout>
-    <KinesioTherapy />
+    <Healing />
   </Layout>
 )
 

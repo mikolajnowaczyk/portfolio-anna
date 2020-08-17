@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import * as images from '../../shared/images'
+// import * as images from '../../shared/images'
 
 // import test from '../../assets/images/test.jpg'
 import classes from './Main.module.css'
@@ -14,7 +14,7 @@ class Main extends Component {
         {/* <div className={classes.HeroImage} style={{ backgroundImage: `url(${bck})` }} /> */}
         {/* <div className={classes.HeroImage} style={{ backgroundImage: `url(${require(images.hand)})` }} /> */}
         {/* <div className={classes.HeroImage} style={{ backgroundImage: 'url(' + require('./../../assets/images/test.jpg') + ')' }} /> */}
-        <img src={"./images/hand.jpg"} alt="logo" height="100%" width="100%" />
+        <img src={"./images/hand.jpg"} alt="HeroImage" height="100%" width="100%" />
         <div className={classes.AboutMe} >
           <h1>
             „Fizjoterapia Anna Karpińska” – Terapia manualna i rehabilitacja

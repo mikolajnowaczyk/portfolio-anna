@@ -29,11 +29,11 @@ class navigationItems extends Component {
           mouseLeft={this.offerMouseLeftHandler}
           open={this.state.OfferDD}
           list={[
-            ["/uslugi/masaze", "Masaze"],
-            ["/uslugi/terapia-manualna", "Terapia Manualna"],
-            ["/uslugi/kinesiology-taping", "Kinesiology taping"],
-            ["/uslugi/kinezyterapia", "Kinezyterapia"],
-            ["/uslugi/wizyta-domowa", "Wizyta domowa"]
+            ["/masaze", "Masaze"],
+            ["/terapia-manualna", "Terapia Manualna"],
+            ["/kinesiology-taping", "Kinesiology taping"],
+            ["/kinezyterapia", "Kinezyterapia"],
+            ["/wizyta-domowa", "Wizyta domowa"]
           ]} />
         <Link href="/cennik">
           <a className={classes.Link}>

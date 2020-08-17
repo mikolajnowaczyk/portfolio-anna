@@ -5,10 +5,11 @@ import Link from "next/link"
 const offerTile = (props) => {
 
   return (
-    <div className={classes.OfferTile} style={{ backgroundImage: `url(${props.image})` }}>
-      <div className={classes.Wrapper}>
+    <div className={classes.Wrapper}>
+      <img src={props.image} alt={props.imageAlt} className={classes.Image} />
+      <div className={classes.LinkWrapper}>
         <Link href={props.link}>
-          <a>{props.children}</a>
+          <a>{props.text}</a>
         </Link>
       </div>
     </div>

@@ -17,6 +17,7 @@ const input = (props) => {
         className={inputClasses.join(' ')}
         {...props.elementConfig}
         value={props.value}
+        name={props.name}
         onChange={props.changed} />;
       break;
     case ('textarea'):
@@ -24,12 +25,16 @@ const input = (props) => {
         className={inputClasses.join(' ')}
         {...props.elementConfig}
         value={props.value}
-        onChange={props.changed} />;
+        name={props.name}
+        onChange={props.changed}
+        type={"text"}
+        onKeyPress={props.supressEnterPropagation} />;
       break;
     case ('select'):
       inputElement = <select
         className={inputClasses.join(' ')}
         value={props.value}
+        name={props.name}
         onChange={props.changed}>
         {
           props.elementConfig.options.map(option => (
@@ -45,6 +50,7 @@ const input = (props) => {
         className={inputClasses.join(' ')}
         {...props.elementConfig}
         value={props.value}
+        name={props.name}
         onChange={props.changed} />;
   }
   return (

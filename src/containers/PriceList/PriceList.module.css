@@ -5,13 +5,16 @@
   border-collapse: collapse;
 }
 
+.Tr{
+  cursor: pointer;
+}
+
 .Th{
   color: white;
   padding: 1rem;
 }
 
 .Td{
-  /* border: red 1px solid; */
   text-align: center;
   padding: 1rem;
   border-bottom: 1px black solid;
@@ -32,4 +35,9 @@
   text-transform: capitalize;
   font-weight: 700;
   color: #098013;
+}
+
+.Tbody a{
+  display: contents;
+  color: black;
 }

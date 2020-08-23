@@ -2,10 +2,15 @@
   background-color: wheat;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   height: 100%;
+}
+
+.dd__HeaderTitle{
+  text-align: center;
+  margin-right: 10px;
 }
 
 .dd_List{

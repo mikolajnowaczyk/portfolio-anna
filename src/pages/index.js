@@ -1,7 +1,7 @@
 import React, { StrictMode } from 'react';
 import './index.module.css';
 import Layout from '../hoc/Layout/Layout'
-import Main from '../containers/Main/Main'
+import Main from '../components/PageContent/Main/Main'
 import HtmlHead from '../hoc/HtmlHead/HtmlHead'
 
 

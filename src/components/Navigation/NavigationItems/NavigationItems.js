@@ -8,11 +8,13 @@ class navigationItems extends Component {
     OfferDD: false,
   }
 
-  offerClickHandler = () => { this.setState(() => ({ OfferDD: !prevState.OfferDD })) }
+  offerTouchHandler = () => { this.setState(prevState => ({ OfferDD: !prevState.OfferDD })) }
 
   offerMouseEnterHandler = () => { this.setState(prevState => ({ OfferDD: !prevState.OfferDD })) }
 
   offerMouseLeftHandler = () => { this.setState(() => ({ OfferDD: false })) }
+
+  clickLinkHandler = () => { this.setState(() => ({ OfferDD: false })) }
 
   render() {
     return (
@@ -24,17 +26,17 @@ class navigationItems extends Component {
         </Link>
         <Dropdown
           title="Uslugi"
-          clicked={this.offerClickHandler}
+          touched={this.offerTouchHandler}
           mouseEntered={this.offerMouseEnterHandler}
           mouseLeft={this.offerMouseLeftHandler}
           open={this.state.OfferDD}
+          clicked={this.clickLinkHandler}
           list={[
             ["/masaze", "Masaze"],
             ["/terapia-manualna", "Terapia Manualna"],
             ["/kinesiology-taping", "Kinesiology taping"],
             ["/kinezyterapia", "Kinezyterapia"],
-            ["/wizyta-domowa", "Wizyta domowa"]
-          ]} />
+            ["/wizyta-domowa", "Wizyta domowa"]]} />
         <Link href="/cennik">
           <a className={classes.Link}>
             <div className={classes.NavLink}>Cennik</div>

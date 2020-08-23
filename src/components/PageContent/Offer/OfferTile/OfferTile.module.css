@@ -1,6 +1,6 @@
 .Wrapper{
-  max-width: 420px;
-  max-height: 350px;
+  width: 270px;
+  height: 150px;
   border: 5px solid red;
   box-sizing: content-box;
   position: relative;
@@ -18,10 +18,11 @@
   z-index: 2;
   text-align: center;
 }
+
 .LinkWrapper a{
   width: 100%;
   height: 100%;
-  font-size: 55px;
+  font-size: 32px;
   position: relative;
   z-index: 3;
   margin: 0;
@@ -47,4 +48,16 @@
 
 .LinkWrapper a:hover{
   text-decoration: none;
+}
+
+@media(min-width: 650px){
+
+  .LinkWrapper a{
+    font-size: 45px;
+  }
+
+  .Wrapper{
+    width: 370px;
+    height: 250px;
+  }
 }

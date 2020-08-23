@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../../hoc/Layout/Layout'
-import Classic from '../../../containers/Offer/Massages/Classic/Classic'
+import Classic from '../../../components/PageContent/Offer/ManualTherapy/Cyriax/Cyriax'
 
 const Index = () => (
   <Layout>

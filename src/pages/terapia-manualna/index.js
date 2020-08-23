@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../hoc/Layout/Layout'
-import ManualTherapy from '../../containers/Offer/ManualTherapy/ManualTherapy'
+import ManualTherapy from '../../components/PageContent/Offer/ManualTherapy/ManualTherapy'
 
 const Index = () => (
   <Layout>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Button from '../../../components/UI/Button/Button'
+import Button from '../../../../components/UI/Button/Button'
 import classes from "./ContactForm.module.css";
-import Spinner from '../../../components/UI/Spinner/Spinner'
-import Input from "../../../components/UI/Input/Input"
-import { updateObject, checkValidity } from '../../../shared/utility'
+import Spinner from '../../../../components/UI/Spinner/Spinner'
+import Input from "../../../../components/UI/Input/Input"
+import { updateObject, checkValidity } from '../../../../shared/utility'
 import emailjs from 'emailjs-com';
 
 class ContactData extends Component {
@@ -90,12 +90,6 @@ class ContactData extends Component {
     e.target.reset();
   }
 
-  // submitHandler = (event) => {
-  //   event.preventDefault();
-  //   //[TODO] Send email
-
-  // }
-
   inputChangedHandler = (event, inputIdentyfier) => {
     const updatedFormElement = updateObject(this.state.form[inputIdentyfier], {
       value: event.target.value,
@@ -124,7 +118,6 @@ class ContactData extends Component {
       })
     }
     let form = (
-      // <form onSubmit={this.sendEmail}>
       <form onSubmit={this.sendEmail} autoComplete="false">
         {formElementsArray.map(formElement => (
           <Input

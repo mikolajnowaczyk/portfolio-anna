@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../hoc/Layout/Layout'
-import Contact from '../../containers/Contact/Contact'
+import Contact from '../../components/PageContent/Contact/Contact'
 
 
 const Index = () => (
@@ -11,7 +11,3 @@ const Index = () => (
 )
 
 export default Index;
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister();

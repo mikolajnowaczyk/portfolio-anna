@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.module.css';
 import Layout from '../../hoc/Layout/Layout'
-import HomeVisit from '../../containers/Offer/HomeVisit/HomeVisit'
+import HomeVisit from '../../components/PageContent/Offer/HomeVisit/HomeVisit'
 
 
 const Index = () => (

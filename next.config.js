@@ -14,7 +14,7 @@ const env = {
 
 module.exports = withPlugins([
   [withImages, {
-    assetPrefix: 'https://github.com/mikolajnowaczyk/portfolio-anna/',
+    assetPrefix: 'https://github.com/mikolajnowaczyk/',
     webpack(config) {
       config.plugins.push(
         new webpack.DefinePlugin({

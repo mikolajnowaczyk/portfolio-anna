@@ -14,8 +14,6 @@
 
 .NavLink:hover{
   background: red;
-  /* cursor: pointer; */
-  /* text-decoration: none; */
 }
 
 .Link:link{
@@ -26,15 +24,5 @@
   .Navbar{
     display: flex;
   }
-
-  /* .NavLink{
-    background: greenyellow;
-    padding: 10px 20px;
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 }
 

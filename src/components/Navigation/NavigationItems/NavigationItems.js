@@ -19,7 +19,7 @@ class navigationItems extends Component {
   render() {
     return (
       <div className={classes.Navbar}>
-        <Link href="/">
+        <Link href="/" as="/">
           <a className={classes.Link}>
             <div className={classes.NavLink}>Strona główna</div>
           </a>

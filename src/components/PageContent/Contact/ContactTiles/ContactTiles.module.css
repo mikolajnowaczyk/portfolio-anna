@@ -1,15 +1,28 @@
+.ContactTilesWrapper{
+  width: 90%;
+  margin: 20px auto;
+}
+
 .ContactTiles{
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
   align-items: center;
   box-shadow: 0 2px 3px #ccc;
   border: 1px solid #eee;
-  padding: 15px;
+  max-height: 360px;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
-@media(min-width: 800px){
+@media(min-width: 600px){
+  
+  .ContactTilesWrapper{
+    max-width: 40%;
+    margin: 20px auto;
+  }
+
   .ContactTiles{
-  align-items: flex-start;
+    align-items: flex-start;
+    width: 80%;
   }
 }

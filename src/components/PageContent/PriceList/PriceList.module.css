@@ -33,12 +33,12 @@
 }
 
 .Thead{
-  background-color: #098013;
+  background-color: #0063c5;
   font-size: 1.5rem;
 }
 
 .Tbody .Tr:hover{
-  background-color: #4bd356;
+  background-color: #90c4f8;
 }
 
 .PriceListHeader{
@@ -46,7 +46,7 @@
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 700;
-  color: #098013;
+  color: #0063c5;
 }
 
 .Tbody a{

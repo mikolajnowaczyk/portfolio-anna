@@ -32,7 +32,7 @@ class navigationItems extends Component {
           open={this.state.OfferDD}
           clicked={this.clickLinkHandler}
           list={[
-            ["/masaze", "Masaze"],
+            ["/masaze", "Masaże"],
             ["/terapia-manualna", "Terapia Manualna"],
             ["/kinesiology-taping", "Kinesiology taping"],
             ["/kinezyterapia", "Kinezyterapia"],

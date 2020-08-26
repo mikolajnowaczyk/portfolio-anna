@@ -1,6 +1,4 @@
-.ContactData {
-  margin: 20px auto;
-  width: 80%;
+.ContactForm {
   text-align: center;
   box-shadow: 0 2px 3px #ccc;
   border: 1px solid #eee;
@@ -8,8 +6,20 @@
   box-sizing: border-box;
 }
 
+.ContactFormWrapper{
+  max-width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ContactTiles{
+  
+  margin: 20px auto;
+}
+
 @media(min-width: 600px) {
-  .ContactData {
-    width: 500px;
+  .ContactFormWrapper{
+    width: 40%;
+    margin: 20px auto;
   }
 }

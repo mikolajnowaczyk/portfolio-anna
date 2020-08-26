@@ -1,7 +1,7 @@
 .Wrapper{
   width: 270px;
   height: 150px;
-  border: 5px solid red;
+  border: 5px solid #0063c5;
   box-sizing: content-box;
   position: relative;
   margin: 25px;

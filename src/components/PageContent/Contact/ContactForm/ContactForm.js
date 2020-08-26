@@ -140,10 +140,10 @@ class ContactData extends Component {
       form = <Spinner />
     }
     return (
-      <div>
-        <h2 style={{ textAlign: "center" }}>Masz pytania?</h2>
-        <h3 style={{ textAlign: "center" }}>Zadzwoń lub wypełnij formularz!</h3>
-        <div className={classes.ContactData}>
+      <div className={classes.ContactFormWrapper}>
+        <h2 style={{ textAlign: "center", color: "#0080FF" }}>Masz pytania?</h2>
+        <h3 style={{ textAlign: "center", color: "#0080FF" }}>Zadzwoń lub wypełnij formularz!</h3>
+        <div className={classes.ContactForm}>
           {form}
         </div>
       </div >

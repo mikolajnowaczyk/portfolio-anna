@@ -1,0 +1,23 @@
+.H2{
+  text-align: center;
+  font-size: 36px;
+  margin-top: 90px;
+}
+
+.Content{
+  margin: 0 25px 25px 25px;
+  text-align: justify;
+  max-width: 700px;
+}
+
+.List{
+  list-style-type: square;
+}
+
+@media(min-width: 600px){
+  .Content{
+    margin: 0 auto 25px auto;
+    max-width: 700px;
+    padding: 0 25px;
+  }
+}

@@ -1,11 +1,12 @@
 .Content{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 @media(min-width: 800px){
   .Content{
     flex-direction: row;
+    justify-content: center;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './index.module.css';
 import Layout from '../../hoc/Layout/Layout'
 import Contact from '../../components/PageContent/Contact/Contact'
-
+import Head from 'next/head'
 
 const Index = () => (
   <Layout>

@@ -2,6 +2,7 @@ import React from 'react';
 import './index.module.css';
 import Layout from '../../hoc/Layout/Layout'
 import PriceList from '../../components/PageContent/PriceList/PriceList'
+import Head from 'next/head'
 
 const Index = () => (
   <Layout>

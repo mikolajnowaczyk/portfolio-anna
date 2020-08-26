@@ -1,14 +1,8 @@
 import React from 'react'
-import OfferView from '../OfferView/OfferView'
 import classes from './KinesiologyTaping.module.css'
 
 const KinestesiologyTaping = () => {
   return (
-    // <OfferView
-    //   title={test_text}
-    //   description={test_text}
-    //   routine={test_text}
-    //   benefits={["Korzyść 2"]} />
     <div className={classes.Wrapper}>
       <h2>Kinesiotaping</h2>
       <section>

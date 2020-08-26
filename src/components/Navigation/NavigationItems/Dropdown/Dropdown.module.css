@@ -1,5 +1,6 @@
 .dd__Header{
-  background-color: wheat;
+  background-color: #0080FF;
+  color: white;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  box-shadow: 0 4px 7px 4px gray;
 }
 
 .Show{
@@ -28,9 +30,13 @@
 }
 
 .NavLink{
-  background: khaki;
+  background: rgb(172, 198, 255);
   padding: 10px 0 10px 20px;
   cursor: pointer;
+}
+
+.NavLink:hover{
+  background: rgb(255, 255, 255);
 }
 
 .Link:link{

@@ -4,10 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 15px;
   box-sizing: border-box;
   z-index: 90;
-  box-shadow: 0 4px 5px -2px rgba(7, 7, 7, 0.35);
 }
 
 .FooterBottom{
@@ -15,9 +14,10 @@
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: blue;
+  background-color: #0004ff;
+  color: white;
   width: 100%;
-  padding: 25px 0;
+  padding: 5px 0;
 }
 
 .ContatctTile{
@@ -32,17 +32,18 @@
   width: 100%;
   height: auto;
   box-sizing: content-box;
-  background-color: #95aae5;
+  background-color: #0080FF;
+  color: white;
   padding-bottom: 15px;
 }
 
 .Footer__Content{
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .Footer__Content__Link{
-  padding: 10px;
   padding-left: 0;
   width: 200px;
   display: flex;
@@ -53,6 +54,15 @@
 
 .Footer__Content__Link a{
   margin-left: 10px;
+  padding: 15px;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.Footer__Content__Link a:hover{
+  background: rgb(172, 198, 255);
+  text-decoration: none;
 }
 
 .Footer__Content__Text{

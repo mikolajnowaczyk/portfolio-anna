@@ -3,7 +3,8 @@
 }
 
 .NavLink{
-  background: greenyellow;
+  background: #0080FF;
+  color: white;
   padding: 10px;
   cursor: pointer;
   height: 100%;
@@ -13,7 +14,7 @@
 }
 
 .NavLink:hover{
-  background: red;
+  background: #74b9ff;
 }
 
 .Link:link{

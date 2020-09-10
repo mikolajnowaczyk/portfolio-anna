@@ -27,6 +27,7 @@ module.exports = withPlugins([
   {
     basePath: basePrefix,
     assetPrefix: assetPrefix,
+    exportTrailingSlash: true,
     env,
   },
 ]);
